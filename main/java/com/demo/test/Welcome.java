@@ -13,4 +13,11 @@ public class Welcome {
         return "Hello " + name ;
 
     }
+
+    @GetMapping(path = "/sendoff/{name}")
+    public String sendoff(@PathVariable String name){
+
+        return "Bye " + name ;
+
+    }
 }
